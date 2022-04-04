@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
     <link rel="stylesheet" href="style.css">
     <title>GoT Libros</title>
 </head>
@@ -13,16 +14,16 @@
             <div class="img-banner">
                 <img src="images/logo1.png" alt="" width="55%">
             </div>
-        <nav>
-            <ul class="navegacion">
-                <li> <a href="index.html"> Inicio </a> </li>
-                <li> <a href="libros.html">Libros </a> </li>
-                <li> <a href="casas.html"> Casas </a> </li>
-                <li> <a href="linea-tiempo.html"> Linea de Tiempo </a> </li>
-                <li> <a href="contacto.html"> Contacto </a> </li>
-                <li> <a href="autor.html"> Autor </a> </li>
-            </ul>
-        </nav>
+            <nav>
+                <ul class="navegacion">
+                    <li> <a href="index.html"> Inicio </a> </li>
+                    <li> <a href="libros.html">Libros </a> </li>
+                    <li> <a href="casas.html"> Casas </a> </li>
+                    <li> <a href="linea-tiempo.html"> Linea de Tiempo </a> </li>
+                    <li> <a href="contacto.html"> Contacto </a> </li>
+                    <li> <a href="autor.html"> Autor </a> </li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
@@ -35,6 +36,7 @@
             </div>
             <div class="contenedor-img">
                 <img class="foto1" src="images/trono.png" alt="">
+                <button type="button" id="popper-index" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Trono de Hierro" data-bs-content="El Trono de Hierro es la sede del poder del Rey de los Siete Reinos. El trono mismo es frío y duro, con muchos bordes afilados.">Info.</button>
             </div> 
             <div class="texto-derecha">
                 <p class="texto-index">En un continente llamado Westeros, había siete reinos separados y gobernados por siete grandes casas de la antigüedad. 
@@ -58,6 +60,11 @@
        <p class="footer-text">© Copyright 2022 GoT Libros</p>
               
     </footer>
-
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl)
+        })</script>
 </body>
 </html>

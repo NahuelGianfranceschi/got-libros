@@ -593,5 +593,54 @@ input{
 }
 .texto-casas{
   padding-bottom: 10px;
+  font-weight: bolder;
 }
+}
+
+.w-100 {
+  width: 125vh!important;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.carrusel-texto{
+  text-align: center;
+}
+#stark{
+  margin-top: 10%;
+}
+#baratheon{
+  margin-top: 10%;
+}
+#lannister{
+  margin-top: 10%;
+}
+#targaryen{
+  margin-top: 10%;
+}
+#arryn{
+  margin-top: 10%;
+}
+#tyrell{
+  margin-top: 10%;
+}
+#greyjoy{
+  margin-top: 10%;
+}
+.carousel-item{
+  text-align: center;
+  margin-bottom: 10%;
+  padding-inline: 20%;
+  transition: transform .6s ease-in-out;
+  
+}
+.carrusel-titulo{
+  font-size: x-large;
+  font-weight: bolder;
+}
+#popper-index{
+  color: rgb(209, 202, 202);
+  background-color: rgb(14, 13, 13);
+  border-color: rgb(87, 84, 84);
+  margin-left: 54vh;
+  margin-right: 40vh;
 }

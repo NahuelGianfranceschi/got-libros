@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>GoT Libros</title>
 </head>
@@ -26,89 +27,81 @@
         </div>
     </header>
     <main>
-       <div id="carrousel">
-        
-        <ul class="slider">
-            <li id="slide1">
-                <img src="images/Casas/stark-logo.jpeg" alt="">
-                <h1><p>Casa Stark</p></h1>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/y9cxbYwz-SM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p class="texto-casas">La casa Stark de Invernalia es una Gran Casa de Westeros y la casa real del Reino del Norte. Ellos gobiernan sobre la vasta región conocida como el Norte desde su asiento en Invernalia.
-                    Es una de las líneas más antiguas de la nobleza de Westerosi con diferencia, y reclama una línea de descendencia que se remonta a más de ocho mil años. Antes de la conquista Targaryen, así como durante la Guerra de los Cinco Reyes.</p>
-            </li>
-            <li id="slide2">
-                <img src="images/Casas/lannister-logo.jpg" alt="">
-                <h1><p>Casa Lannister</p></h1>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/NAKdbQIoR2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p class="texto-casas">La casa Lannister de Roca Casterly es una de las Grandes Casas de Westeros, una de sus familias más ricas y poderosas y una de sus dinastías más antiguas. También fue la Casa real de los Siete Reinos tras la extinción de la Casa Baratheon de Desembarco del Rey, 
-                    que había sido su Casa títere durante la Guerra de los Cinco Reyes.</p>
-            </li>
-            <li id="slide3">
-                <img src="images/Casas/baratheon-logo.jpg" alt="">
-                <h1><p>Casa Baratheon</p></h1>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/casas/stark-logo.jpeg" class="d-block w-100" alt="...">
+                 <div class="carrusel-texto">
+                    <h1><p class="carrusel-titulo">Casa Stark</p></h1>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/y9cxbYwz-SM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p id="stark" class="texto-casas">La casa Stark de Invernalia es una Gran Casa de Westeros y la casa real del Reino del Norte. Ellos gobiernan sobre la vasta región conocida como el Norte desde su asiento en Invernalia.
+                     Es una de las líneas más antiguas de la nobleza de Westerosi con diferencia, y reclama una línea de descendencia que se remonta a más de ocho mil años. Antes de la conquista Targaryen, así como durante la Guerra de los Cinco Reyes.</p>
+                 </div>  
+              </div>
+              <div class="carousel-item">
+                <img src="images/casas/baratheon-logo.jpg" class="d-block w-100" alt="...">
+                <h1><p class="carrusel-titulo">Casa Baratheon</p></h1>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Cyd1LVLkt2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p class="texto-casas">La Casa Baratheon de Bastión de Tormentas es una Gran Casa de Poniente que tradicionalmente gobierna las Tierras de la Tormenta en la costa este de Poniente, acertadamente llamada así por sus frecuentes tormentas, desde su asiento en Bastión de Tormentas.
+                <p id="baratheon" class="texto-casas">La Casa Baratheon de Bastión de Tormentas es una Gran Casa de Poniente que tradicionalmente gobierna las Tierras de la Tormenta en la costa este de Poniente, acertadamente llamada así por sus frecuentes tormentas, desde su asiento en Bastión de Tormentas.
                      La casa Baratheon se convirtió en la casa real de los Siete Reinos después de que Robert Baratheon liderara una rebelión contra la dinastía Targaryen.</p>
-            </li>
-            <li id="slide4">
-                <img src="images/Casas/targaryen-logo.jpg" alt="">
-                <h1><p>Casa Targaryen</p></h1>
+              </div>
+              <div class="carousel-item">
+                <img src="images/casas/lannister-logo.jpg" class="d-block w-100" alt="...">
+                <h1><p class="carrusel-titulo">Casa Lannister</p></h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NAKdbQIoR2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p id="lannister" class="texto-casas">La casa Lannister de Roca Casterly es una de las Grandes Casas de Westeros, una de sus familias más ricas y poderosas y una de sus dinastías más antiguas. También fue la Casa real de los Siete Reinos tras la extinción de la Casa Baratheon de Desembarco del Rey, 
+                    que había sido su Casa títere durante la Guerra de los Cinco Reyes.</p>
+              </div>
+            
+              <div class="carousel-item">
+                <img src="images/casas/targaryen-logo.jpg" class="d-block w-100" alt="...">
+                <h1><p class="carrusel-titulo">Casa Targaryen</p></h1>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/9SPoS8ZUtmI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p class="texto-casas">La casa Targaryen de Roca Dragon es una Gran Casa exiliada de Westeros y la antigua Casa real de los Siete Reinos. La Casa Targaryen conquistó y unificó el reino antes de que fuera depuesto durante la Rebelión de Robert y la Casa Baratheon la reemplazó como la nueva Casa real.
+                <p id="targaryen" class="texto-casas">La casa Targaryen de Roca Dragon es una Gran Casa exiliada de Westeros y la antigua Casa real de los Siete Reinos. La Casa Targaryen conquistó y unificó el reino antes de que fuera depuesto durante la Rebelión de Robert y la Casa Baratheon la reemplazó como la nueva Casa real.
                     Los dos Targaryen sobrevivientes, Viserys y Daenerys, huyeron al exilio a las Ciudades Libres de Essos al otro lado del Mar Angosto.</p>
-            </li>
-            <li id="slide5">
-                <img src="images/Casas/tyrell-logo.jpg" alt="">
-                <h1><p>Casa Tyrell</p></h1>
+                     La casa Baratheon se convirtió en la casa real de los Siete Reinos después de que Robert Baratheon liderara una rebelión contra la dinastía Targaryen.</p>
+              </div>
+              <div class="carousel-item">
+                <img src="images/casas/tyrell-logo.jpg" class="d-block w-100" alt="...">
+                <h1><p class="carrusel-titulo">Casa Tyrell</p></h1>
                 <iframe  width="560" height="315" src="https://www.youtube.com/embed/NJkfiW29uYU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p class="texto-casas">La Casa Tyrell de Altojardín es una de las Grandes Casas de Poniente. Gobernó sobre el Dominio, una región vasta, fértil y densamente poblada del suroeste de Westeros,
+                <p id="tyrell" class="texto-casas">La Casa Tyrell de Altojardín es una de las Grandes Casas de Poniente. Gobernó sobre el Dominio, una región vasta, fértil y densamente poblada del suroeste de Westeros,
                      desde su castillo-asiento de Altojardín como Señores Supremos del Dominio y Guardianes del Sur después de tomar el control de la región de la casa Gardener durante la conquista Targaryen.</p>
-            </li>
-            <li id="slide6">
-                <img src="images/Casas/arryn-logo.jpg" alt="">
-                <h1><p>Casa Arryn</p></h1>
+              </div>
+              <div class="carousel-item">
+                <img src="images/casas/arryn-logo.jpg" class="d-block w-100" alt="...">
+                <h1><p class="carrusel-titulo">Casa Arryn</p></h1>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/K4V8Vt4Yd1k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p class="texto-casas">La casa Arryn del Nido de Águilas es una de las Grandes Casas de Westeros. Ha gobernado el Valle de Arryn durante milenios, originalmente como los Reyes de la Montaña y el Valle y, más recientemente, como Defensores del Valle y Guardianes del Este bajo las dinastías Targaryen, Baratheon y Lannister.
+                <p id="arryn" class="texto-casas">La casa Arryn del Nido de Águilas es una de las Grandes Casas de Westeros. Ha gobernado el Valle de Arryn durante milenios, originalmente como los Reyes de la Montaña y el Valle y, más recientemente, como Defensores del Valle y Guardianes del Este bajo las dinastías Targaryen, Baratheon y Lannister.
                      El jefe nominal de la Casa Arryn es Robin Arryn, el Señor del Nido de Águilas, y Yohn Royce tiene el poder real sobre la casa.
-                </p>
-            </li>
-            <li id="slide7">
-                <img src="images/Casas/greyjoy-logo.jpg" alt="">
-                <h1><p>Casa Greyjoy</p></h1>
+              </div>
+              <div class="carousel-item">
+                <img src="images/casas/greyjoy-logo.jpg" class="d-block w-100" alt="...">
+                <h1><p class="carrusel-titulo">Casa Greyjoy</p></h1>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Mc-drbsbGX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p class="texto-casas">La Casa Greyjoy de Pyke es una de las Grandes Casas de Westeros. Gobierna sobre las Islas del Hierro, una colección dura y sombría de islas frente a la costa oeste de Westeros, desde el castillo de Pyke. El jefe de la casa es el Lord Reaper de Pyke.
+                <p id="greyjoy" class="texto-casas">La Casa Greyjoy de Pyke es una de las Grandes Casas de Westeros. Gobierna sobre las Islas del Hierro, una colección dura y sombría de islas frente a la costa oeste de Westeros, desde el castillo de Pyke. El jefe de la casa es el Lord Reaper de Pyke.
                      Las Islas del Hierro son duras y desoladas y los Greyjoy tradicionalmente han sobrevivido asaltando a sus vecinos. Siempre han tenido planes para conquistar el continente.</p>
-            </li>
+              </div>
+            </div>  
 
-        </ul>   
-
-        <ul class="menu">
-            <li>
-                <a href="#slide1">1</a>
-            </li>
-            <li>
-                <a href="#slide2">2</a>
-            </li>
-            <li>
-                <a href="#slide3">3</a>
-            </li>
-            <li>
-                <a href="#slide4">4</a>
-            </li>
-            <li>
-                <a href="#slide5">5</a>
-            </li>
-            <li>
-                <a href="#slide6">6</a>
-            </li>
-            <li>
-                <a href="#slide7">7</a>
-            </li>
-        </ul>
-    
-       
-    
-        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </main>
     <footer class="footer">
         
@@ -118,6 +111,6 @@
         <p class="footer-text">© Copyright 2022 GoT Libros</p>
               
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

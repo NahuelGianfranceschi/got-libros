@@ -252,13 +252,15 @@ grid-area: proxim;
 .portadas2{
   display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
   grid-area: libros2;
+  margin-bottom: 10vh;
 }
 .portadas{
   display: flex;
     flex-direction: row;
     justify-content: center;
+    justify-content: space-evenly;
   grid-area: libros;
 }
 #portada1{
@@ -301,6 +303,7 @@ input{
 
 .formulario{
     text-align: center;
+    white-space: pre-wrap;
     padding-top: 80px;
     margin-bottom: 30%;
 }
@@ -538,7 +541,7 @@ input{
     padding-bottom: 25px;
   }
   .portadas2{
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   #portada1{
     padding: 5px;
@@ -643,4 +646,56 @@ input{
   border-color: rgb(87, 84, 84);
   margin-left: 54vh;
   margin-right: 40vh;
+}
+#popover-li1{
+  background-image: url(images/Libros/libro1.jpg); 
+    width: 20vh;
+    height: 30vh;
+    background-size: cover;  
+    border-color: rgb(8, 8, 8);
+}
+#popover-li2{
+  background-image: url(images/Libros/libro2.jpg); 
+    width: 20vh;
+    background-size: cover;  
+    border-color: rgb(8, 8, 8);
+}
+#popover-li3{
+  background-image: url(images/Libros/libro3.jpg); 
+    width: 20vh;
+    background-size: cover;  
+    border-color: rgb(8, 8, 8);
+}
+#popover-li4{
+  background-image: url(images/Libros/libro4.jpg); 
+    width: 20vh;
+    background-size: cover;  
+    border-color: rgb(8, 8, 8);
+}
+#popover-li5{
+  background-image: url(images/Libros/libro5.jpg); 
+    width: 20vh;
+    background-size: cover;  
+    border-color: rgb(8, 8, 8);
+}
+#popover-li6{
+  background-image: url(images/Libros/libro6.jpg); 
+    width: 20vh;
+    height: 30vh;
+    background-size: cover;  
+    border-color: rgb(8, 8, 8);
+}
+#popover-li7{
+  background-image: url(images/Libros/libro7.jpg); 
+    width: 20vh;
+    background-size: cover;  
+    border-color: rgb(8, 8, 8);
+}
+.spinner-cargando{
+  margin-left: 5vh;
+}
+#boton-au{
+  background-color: rgb(74, 74, 74);
+  border-color: rgb(4, 4, 4);
+  justify-content: center;
 }

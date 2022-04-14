@@ -1,0 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap');
+@import "./partials/variables";
+@import "./partials/mediaquerys";
+@import "./partials/header";
+@import "./partials/footer";
+@import "./partials/body";
+@import "./partials/linea-tiempo";
+@import "./partials/carrusel";
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

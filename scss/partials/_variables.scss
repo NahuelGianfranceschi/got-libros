@@ -1,0 +1,17 @@
+$secondary_color:#80271b;
+
+$letra: ("regular": 400, "media": 500, "ancha": 700);
+
+%centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin alineacion($display, $orientation) {   
+   
+    display: $display ;
+    flex-direction: $orientation ;
+    
+    
+}

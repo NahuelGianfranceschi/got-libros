@@ -1,0 +1,258 @@
+body{
+
+    font-family: 'Roboto Serif', serif;
+    background-image: url(/images/posiblefondo1.jpg); 
+    background-size: cover; 
+    
+    min-height: 100vh;
+
+}
+p{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 17px;
+}
+.section1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 1fr ;
+    grid-template-areas: 
+        "titulo titulo "
+        "trono texto";
+  
+          .encabezado{
+           background-color: transparent;
+           grid-area: titulo;
+           grid-row: 1;
+           grid-column: 1 1;
+          
+            padding-top: 50px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+          
+              .titulos{
+                  color: rgb(0, 0, 0);
+                  font-style: italic;
+                  text-align: center;
+                  font-variant: petite-caps;   
+                  font-size: map-get($letra, media); // 500
+              }
+          
+  
+          }
+  }
+                                              
+  .section2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    grid-template-areas: 
+        "encabezadoli"
+        "libros"
+        "proxim"
+        "libros2";
+  
+      #encabezadoli{
+          padding-top: 150px;
+          margin-bottom: 20px;
+          padding-bottom: 10px;
+          grid-area: encabezadoli;
+          grid-row: 1;
+          grid-column: 1;
+          color: rgb(0, 0, 0);
+          font-style: italic;
+          text-align: center;
+          font-variant: petite-caps;  
+        
+      }
+          .portadas{
+              @include alineacion(flex, row);
+              justify-content: space-evenly;
+              grid-area: libros;
+              grid-row: 2;
+              grid-column: 1;
+  
+              #popover-li1{
+                  background-image: url(/images/libros/libro1.jpg); 
+                    width: 20vh;
+                    height: 30vh;
+                    background-size: cover;  
+                    border-color: rgb(8, 8, 8);
+                }
+                #popover-li2{
+                  background-image: url(/images/libros/libro2.jpg); 
+                    width: 20vh;
+                    background-size: cover;  
+                    border-color: rgb(8, 8, 8);
+                }
+                #popover-li3{
+                  background-image: url(/images/libros/libro3.jpg); 
+                    width: 20vh;
+                    background-size: cover;  
+                    border-color: rgb(8, 8, 8);
+                }
+                #popover-li4{
+                  background-image: url(/images/libros/libro4.jpg); 
+                    width: 20vh;
+                    background-size: cover;  
+                    border-color: rgb(8, 8, 8);
+                }
+                #popover-li5{
+                  background-image: url(/images/libros/libro5.jpg); 
+                    width: 20vh;
+                    background-size: cover;  
+                    border-color: rgb(8, 8, 8);
+                }
+          }
+              #proximamente{
+                  padding-bottom: 30px;
+                  grid-area: proxim;
+                  grid-row: 3;
+                  grid-column: 1;
+                  text-align: center;
+                  padding-top: 10vh;
+              }
+                  .portadas2{
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: space-evenly;
+                      grid-area: libros2;
+                      grid-row: 4;
+                      grid-column: 1;
+                      margin-bottom: 10vh;
+  
+                      #popover-li6{
+                          background-image: url(/images/libros/libro6.jpg); 
+                            width: 20vh;
+                            height: 30vh;
+                            background-size: cover;  
+                            border-color: rgb(8, 8, 8);
+                        }
+                        #popover-li7{
+                          background-image: url(/images/libros/libro7.jpg); 
+                            width: 20vh;
+                            background-size: cover;  
+                            border-color: rgb(8, 8, 8);
+                        }
+                  }
+  }  
+  
+  .contenedor-img{
+  background-color: transparent;
+  grid-area: trono;
+  grid-row: 2;
+  grid-column: 1;
+  
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+  
+      .foto1{
+        padding: 0px;
+        margin-left: 0px;
+        width: 110%;
+      }
+  
+        #popper-index{
+              color: rgb(209, 202, 202);
+              background-color: rgb(14, 13, 13);
+              border-color: rgb(87, 84, 84);
+              margin-left: 44vh;
+              margin-right: 34vh;
+           }
+  }
+  
+  .texto-derecha{
+   background-color: transparent;
+   grid-area: texto;
+   grid-row: 2;
+   grid-column: 2;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;  
+   position: inherit;
+   top: 15%; 
+   left: 47%; 
+   overflow: auto;
+  
+      .texto-index{
+          @extend %centrado;
+          font-size: 18px;
+          padding-left: 2px;
+          padding-right: 50px;
+          padding-top: 50px;
+      }
+    
+}
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  
+    list-style: none;
+  }  
+  .titulo-con{
+      color: rgb(0, 0, 0);
+      font-style: italic;
+      text-align: center;
+      font-variant: petite-caps;
+      padding: 20px;
+      margin: 50px;
+  }
+  
+  .texto-au{
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      text-align: center;
+      padding: 20px;
+      margin: 70px;
+  
+          #martinimg{
+            @extend %centrado;
+              width: 70%;
+              padding: 20px;
+              margin: 30px;
+          }
+  
+              #martinvid{
+                @extend %centrado;
+                  padding: 20px;
+                  margin: 30px;
+              }
+  
+  }
+  
+  h1{
+      font-size: 30px;
+      padding-bottom: 50px;
+      text-align: center;
+        #titulo-tiempo{
+            @include alineacion(flex, row);
+             
+        }
+  }
+  
+  h2{
+      font-size: 20px;
+  }
+  
+  input{
+      width: 40%;
+      height: 7vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+      
+      &__com{
+          height: 16vh;
+  }
+  }
+  
+  
+  .formulario{
+      text-align: center;
+      white-space: pre-wrap;
+      margin-bottom: 10%;
+  }

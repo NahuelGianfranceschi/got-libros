@@ -1,0 +1,31 @@
+header{ background-color: #040404;
+   
+    background-image: linear-gradient(0deg, #040404 0%, #4a4a4a 35%, #a3a3a3 75%);
+}
+.barranav{
+    position: sticky;
+  
+       .img-banner{
+        @extend %centrado;
+          margin-bottom: 10px;
+          }
+  
+          .navegacion li{
+              display: inline;
+              padding: 5px;
+              border-radius: 10px;
+              margin: 8px;
+            }
+            
+            a:-webkit-any-link{
+              text-decoration: none;
+              color: rgb(205, 206, 204);
+              font-variant-caps: petite-caps;
+          }
+            
+  }
+  
+  .navegacion li:hover{
+    transition: 1s;
+    background-color: $secondary_color;
+  }

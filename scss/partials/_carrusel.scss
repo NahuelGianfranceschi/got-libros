@@ -1,0 +1,59 @@
+#carrousel > ul.slider li iframe{
+    width: -webkit-fill-available;;
+    height: 250px;
+    object-fit: cover;
+    margin-top:  80px;
+    padding: 20px;      
+   margin-inline: 2px;
+  }
+  .texto-casas{
+    padding-bottom: 10px;
+    font-weight: bolder;
+  }
+  
+  .w-100 {
+    width: 125vh!important;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .carrusel-texto{
+    text-align: center;
+  
+      #stark{
+          margin-top: 10%;
+    }
+    .carrusel-titulo{
+      font-size: x-large;
+      font-weight: bolder;
+    }
+  }
+  
+  .carousel-item{
+    text-align: center;
+    margin-bottom: 10%;
+    padding-inline: 20%;
+    transition: transform .6s ease-in-out;
+  
+      #baratheon{
+          margin-top: 10%;
+      }
+      #lannister{
+          margin-top: 10%;
+      }
+      #targaryen{
+          margin-top: 10%;
+      }
+      #arryn{
+          margin-top: 10%;
+      }
+      #tyrell{
+          margin-top: 10%;
+      }
+      #greyjoy{
+          margin-top: 10%;
+      }
+      .carrusel-titulo{
+          font-size: x-large;
+          font-weight: bolder;
+        }
+  }

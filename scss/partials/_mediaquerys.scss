@@ -55,7 +55,9 @@
    
   
   @media only screen and (max-width: 768px) {
-  
+    body{
+      min-width: 100vh;
+    }
   .section1{
     display: grid;
     grid-template-columns: 1fr;
@@ -127,8 +129,16 @@
   padding: 20px;      
   margin-inline: 2px;
   }
+  .carousel-item iframe{
+    width: 100%;
+  }
   .texto-casas{
   padding-bottom: 10px;
   font-weight: bolder;
   }
+  .texto-derecha{
+    grid-column: 1;
+    grid-row: 3;
+  }  
   }
+

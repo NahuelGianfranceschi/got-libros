@@ -45,17 +45,14 @@ p{
   .section2{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 4fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-        "encabezadoli"
-        "libros"
-        "proxim"
-        "libros2";
+        "encabezadoli libros"
+        "proxim libros2";
   
       #encabezadoli{
-          padding-top: 150px;
-          margin-bottom: 20px;
-          padding-bottom: 10px;
+          padding-top: 15vh;
+          
           grid-area: encabezadoli;
           grid-row: 1;
           grid-column: 1;
@@ -67,10 +64,13 @@ p{
       }
           .portadas{
               @include alineacion(flex, row);
+              display: flex;
+              flex-wrap: wrap;
               justify-content: space-evenly;
               grid-area: libros;
               grid-row: 2;
               grid-column: 1;
+              width:100vw;
   
               #popover-li1{
                   background-image: url(/images/libros/libro1.jpg); 
@@ -78,30 +78,44 @@ p{
                     height: 30vh;
                     background-size: cover;  
                     border-color: rgb(8, 8, 8);
+                    margin-top: 2vh;
+                    margin-bottom: 2vh;
                 }
                 #popover-li2{
                   background-image: url(/images/libros/libro2.jpg); 
                     width: 20vh;
+                    height: 30vh;
                     background-size: cover;  
                     border-color: rgb(8, 8, 8);
+                    margin-top: 2vh;
+                    margin-bottom: 2vh;
                 }
                 #popover-li3{
                   background-image: url(/images/libros/libro3.jpg); 
                     width: 20vh;
+                    height: 30vh;
                     background-size: cover;  
                     border-color: rgb(8, 8, 8);
+                    margin-top: 2vh;
+                    margin-bottom: 2vh;
                 }
                 #popover-li4{
                   background-image: url(/images/libros/libro4.jpg); 
                     width: 20vh;
+                    height: 30vh;
                     background-size: cover;  
                     border-color: rgb(8, 8, 8);
+                    margin-top: 2vh;
+                    margin-bottom: 2vh;
                 }
                 #popover-li5{
                   background-image: url(/images/libros/libro5.jpg); 
                     width: 20vh;
+                    height: 30vh;
                     background-size: cover;  
                     border-color: rgb(8, 8, 8);
+                    margin-top: 2vh;
+                    margin-bottom: 2vh;
                 }
           }
               #proximamente{
@@ -114,6 +128,7 @@ p{
               }
                   .portadas2{
                       display: flex;
+                      flex-wrap: wrap;
                       flex-direction: row;
                       justify-content: space-evenly;
                       grid-area: libros2;
@@ -131,6 +146,7 @@ p{
                         #popover-li7{
                           background-image: url(/images/libros/libro7.jpg); 
                             width: 20vh;
+                            height: 30vh;
                             background-size: cover;  
                             border-color: rgb(8, 8, 8);
                         }
@@ -298,10 +314,12 @@ ul {
 .snow {
   $total: 200;
   position: absolute;
+  overflow: hidden;
   width: 6px;
   height: 6px;
   background: white;
   border-radius: 50%;
+  
 
   @for $i from 1 through $total {
     $random-x: random(1000000) * 0.0001vw;
@@ -318,6 +336,7 @@ ul {
       opacity: random(10000) * 0.0001;
       transform: translate($random-x, -10px) scale($random-scale);
       animation: fall-#{$i} $fall-duration $fall-delay linear infinite;
+      overflow: hidden;
     }
 
     @keyframes fall-#{$i} {
